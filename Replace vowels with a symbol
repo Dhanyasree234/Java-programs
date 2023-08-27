@@ -14,3 +14,9 @@ for(i=0;i<=chararray.length();i++)
   Replaced string=chararray[i];
   System.out.println(Replaced);
   }
+
+#Using replaceAll commend:
+
+String given="This is to replace";
+String replace=given.replaceAll("[AEIOUaeiou]","*");
+System.out.println(replace);
