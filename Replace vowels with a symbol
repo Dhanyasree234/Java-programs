@@ -1,0 +1,16 @@
+#Using own logic:
+
+String given="This is to replace";
+Char[] chararray=given.toCharArray();
+for(i=0;i<=chararray.length();i++)
+  {
+  if(chararray.length(i)=='A'||chararray.length(i)=='E'||chararray.length(i)=='I'||chararray.length(i)=='O'||chararray.length(i)=='U'||
+     chararray.length(i)=='a'||chararray.length(i)=='e'||chararray.length(i)=='i'||chararray.length(i)=='o'||chararray.length(i)=='u'||)
+
+    chararray[i]='*';
+  }
+for(i=0;i<=chararray.length();i++)
+  {
+  Replaced string=chararray[i];
+  System.out.println(Replaced);
+  }
