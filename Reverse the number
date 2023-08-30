@@ -1,0 +1,32 @@
+# Using own logic 1:
+-----------------------
+long given=12345;
+long reversed=0;
+List<Array> array=given.toArraylist();
+for(i=array.length-1;i>=0;i--)
+  {
+  reversed=reversed+array[i];
+  System.out.println(reversed);
+  }
+------------------------------------------
+
+#Using own logic 2:
+------------------------
+int given=123;
+int reversed;
+while(given!=0)
+  {
+  reversed=reversed*10;
+  reversed=reversed+given%10;
+  given=given/10;
+  }
+System.out.println(reversed);
+-------------------------------------------
+
+#Using reverse command:
+--------------------------
+int given=123;
+int reversed=given.reverseAll();
+System.out.println(reversed);
+---------------------------------------------
+
