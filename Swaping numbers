@@ -1,0 +1,31 @@
+#Using 3rd party variable:
+---------------------------
+int previousnumber=20;
+int presentnumber=30;
+int thirdparty=0;
+System.out.println("Before swaping: The previous number is: " + previousnumber);
+System.out.println("Before swaping: The present number is: " + presentnumber);
+{
+thirdparty=previousnumber;
+previousnumber=presentnumber;
+presentnumber=thirdparty;
+}
+System.out.println("After swaping: The previous number is: " + previousnumber);
+System.out.println("After swaping: The present number is: " + presentnumber);
+-----------------------------------------------------------------------------------
+
+#Using without thirdparty variable:
+-----------------------------------
+int previousnumber=20;
+int presentnumber=30;
+System.out.println("Before swaping: The previous number is: " + previousnumber);
+System.out.println("Before swaping: The present number is: " + presentnumber);
+{
+previousnumber=previousnumber+presentnumber;
+presentnumber=previousnumber-presentnumber;
+previousnmber=previousnumber-presentnumber;
+}
+System.out.println("After swaping: The previous number is: " + previousnumber);
+System.out.println("After swaping: The present number is: " + presentnumber);
+---------------------------------------------------------------------------------------
+
