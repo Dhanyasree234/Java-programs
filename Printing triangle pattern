@@ -1,0 +1,33 @@
+#Printing pattern with symbol
+-----------------------
+Scanner scanner=new Scanner(System.in);
+System.out.println("Number of lines: ");
+int numberoflines=scanner.nextInt();
+int row=0;
+int column=0;
+for(row=0;row<numberoflines;row++)
+{
+for(column=0;column<=row;column++)
+{
+System.out.print("* ");
+}
+Sytem.out.println();
+}
+------------------------------------------------------------
+
+#Printing pattern with numbers:
+--------------------------------
+int startingnumber=1;
+int row=0;
+int column=0;
+for(row=0;row<startingnumber;row++)
+{
+for(column=0;column<=row;column++)
+{
+System.out.print(startingnumber+" ");
+staringnumber=startingnumber+1;
+}
+System.out.println();
+}
+-----------------------------------------------------------------
+
