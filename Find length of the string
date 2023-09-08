@@ -1,0 +1,18 @@
+#Using length command:
+-------------------------
+String given="Hello";
+int stringlength=give.length();
+Sysem.out.println(stringlength);
+-----------------------------------------
+
+#Using foreach loop:
+----------------------
+String given="Hello";
+int stringlength=0;
+char[] array=given.toCharArray();
+for(char c:array)
+{
+stringlength++;
+}
+System.out.println(stringlength);
+--------------------------------------------
