@@ -1,0 +1,25 @@
+#Using own logic:
+------------------
+int givenarray[]={4,1,2,6,0};
+int smallvalue=Integer.Max_Value;
+for(int small=0;small<givenarray.length;small++)
+{
+if(givenarray[small]<smallvalue)
+smallvalue=givenarray[small];
+}
+System.out.println(smallvalue);
+------------------------------------------------------
+#Using sort command:
+--------------------------------------
+int givenarray[]={4,1,2,6,0};
+Arrays.sort[givenarray];
+System.out.println(givenarray[0]);
+-------------------------------------------------------
+#Using Collections:
+-------------------
+Integer givenarray[]={4,1,2,6,0};
+List<Integer> arraylist=Arrays.asList(givenarray);
+Collections.sort(arraylist);
+int smallvalue=arraylist.get(0);
+System.out.println(smallvalue);
+-------------------------------------------------------------
