@@ -1,0 +1,21 @@
+#Using split command:
+----------------------
+String statement="I am using GITHUB";
+String reversedstate="";
+String[] string=statement.split(" ");
+System.out.println(string[3]);
+System.out.println(string[2]);
+System.out.println(string[1]);
+System.out.println(string[0]);
+----------------------------------------------
+#Using for loop:
+-------------------
+String statement="I am using GITHUB";
+String reversedstate="";
+String[] string=statement.split(" ");
+for(i=statement.length-1;i>=0;i--)
+  {
+  reversedstate=reversedstate+string[i]+" ";
+  }
+System.out.println("Reversed statement: "+reversedstate);
+----------------------------------------------------------------
