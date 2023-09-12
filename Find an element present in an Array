@@ -1,0 +1,46 @@
+# Method 1:
+-------------
+int[] array={1,2,3,4,5};
+int numbertofind=4;
+boolean found; //or  boolean found=False;
+for(int find=0;find<array.length;find++)
+{
+if (numbertofind==find)
+System.out.println(!found); //or  found=True; System.out.println("Number is present");
+}
+------------------------------------------------------------------------------------------
+# Method 2:
+------------
+int[] array={1,2,3,4,5};
+int numbertofind=4;
+boolean found=False; 
+for(int find=0;find<array.length;find++)
+{
+if (numbertofind==find)
+found=True;
+break;
+{
+if(found){
+System.out.println("Present");
+}
+else{
+System.out.println("Not present");
+}
+}
+---------------------------------------------------
+# Using IntStream (java8):
+--------------------------
+int[] array={1,2,3,4,5};
+int numbertofind=4;
+boolean found=IntStream.of(array).anyMatch(element->element==numbertofind);
+if(found)
+{
+System.out.println("Number present");
+}
+else
+{
+System.out.println("Number not present);
+}
+----------------------------------------------------------------------------------------
+
+
