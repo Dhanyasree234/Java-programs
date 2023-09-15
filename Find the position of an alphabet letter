@@ -1,0 +1,10 @@
+# Using ASCII value:
+---------------------
+Scanner scanner= new Scanner(System.in);
+System.out.println("Enter the letter: ");
+char given=scanner.next().charAt(0);
+given=Character.tolowerCase(given);
+int asciivalue=(int)given;
+int positionOfALetter=asciivalue-96; // or if the letter changed to uppercase --> use --> asciivalue-64;
+System.out.println("The position of the letter is: "+positionOfALetter);
+-----------------------------------------------------------------------------------------------------------------
